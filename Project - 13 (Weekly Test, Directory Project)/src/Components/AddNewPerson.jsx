@@ -48,9 +48,11 @@ const AddNewPerson = () => {
     } 
     if(aadharNumber.length < 12 ){
       alert("Invalid Aadhar Card");
+      return;
     }
     if(phnNumber.length < 10){
       alert("Invalid Phone Number");
+      return;
     }else {
       const newPersonData = {
         id: new Date().getTime(),

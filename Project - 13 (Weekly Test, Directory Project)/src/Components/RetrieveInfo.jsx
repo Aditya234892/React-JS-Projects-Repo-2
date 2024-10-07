@@ -51,7 +51,7 @@ const RetrieveInfo = () => {
               />
               <div className="px-5 py-2 mt-4 flex gap-x-5">
                 {peopleData
-                  .filter((person) => person.name === debouncedName)
+                  .filter((person) => person.name === debouncedName.toLowerCase())
                   .map((person, index) => (
                     <div
                       key={index}

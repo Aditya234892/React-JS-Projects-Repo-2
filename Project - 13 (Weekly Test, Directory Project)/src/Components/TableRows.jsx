@@ -9,7 +9,7 @@ const TableRows = (props) => {
 
   return (
     <tr className="text-center">
-      <td className="border-2 border-red-900 px-4 py-2">{props.name}</td>
+      <td className="border-2 border-red-900 px-4 py-2">{props.name.charAt(0).toUpperCase() + props.name.slice(1).toLowerCase()}</td>
       <td className="border-2 border-red-900 px-4 py-2">{`${year}-${month}-${day}`}</td>
       <td className="border-2 border-red-900 px-4 py-2">{props.aadharNumber}</td>
       <td className="border-2 border-red-900 px-4 py-2">{props.phnNumber}</td>
