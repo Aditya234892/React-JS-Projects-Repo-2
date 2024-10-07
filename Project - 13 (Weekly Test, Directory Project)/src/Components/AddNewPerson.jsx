@@ -186,6 +186,8 @@ const AddNewPerson = () => {
                     type="number"
                     placeholder="Aadhar Number"
                     className="w-full h-full py-1 px-3"
+                    maxLength={12}
+                    minLength={12}  
                     value={aadharNumber}
                     onChange={(e) => setAadharNumber(e.target.value)}
                   />
@@ -195,6 +197,8 @@ const AddNewPerson = () => {
                     type="number"
                     placeholder="Mobile Number"
                     className="w-full h-full py-1 px-3"
+                    maxLength={10}
+                    minLength={10}
                     value={phnNumber}
                     onChange={(e) => setPhnNumber(e.target.value)}
                   />
